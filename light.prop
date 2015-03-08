@@ -1,0 +1,8 @@
+{
+  "modules": { 
+    "light": {
+      "description": "Commander votre installation X10",
+      "version": "0.1"
+    }
+  }
+}

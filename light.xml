@@ -1,0 +1,17 @@
+﻿<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleLight" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="ruleLight" scope="public">
+    <example>Sarah allume la lumière du salon</example>
+    <tag>out.action=new Object(); </tag>
+    <item>Sarah</item>
+    <one-of>
+      <item>allume<tag>out.action.type="sendplc"; out.action.valeur="on"</tag></item>
+	  <item>allume la lumière<tag>out.action.type="sendplc"; out.action.valeur="on"</tag></item>
+      <item>éteint<tag>out.action.type="sendplc"; out.action.valeur="off"</tag></item>
+	  <item>éteint la lumière<tag>out.action.type="sendplc"; out.action.valeur="off"</tag></item>
+    </one-of>
+	<one-of>
+      <item>la chambre<tag>out.action.code="A1"</tag></item>
+    </one-of>
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/light";</tag>
+  </rule> 
+</grammar>

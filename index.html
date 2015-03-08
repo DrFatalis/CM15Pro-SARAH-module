@@ -1,0 +1,32 @@
+﻿<div id="light">
+  <div class="row-fluid">
+	<div class="span11">
+	<h1>Installation</h1>
+	<p>Telechargez et installez les logiciels suivants:<span style="color: #0000ff"></p>
+	<p span style="margin-left:10px;"><b>Les logiciels ici sont les minimum requis</b><span style="color: #0000ff"></p>
+	<p><a href='http://support.domadoo.com/doc/activehome_pro_sdk_install.rar'>Le SDK de ActiveHome Pro</a></p>
+	<p span style="margin-left:20px;">Permet d'obtenir l'ActiveX activehome qui controlera votre CM15Pro</p>
+	<p><a href='http://go.microsoft.com/?linkid=7729279'>Visual C++ 2008 Express</a></p>
+	<p span style="margin-left:20px;">Permet de compiler la librairie win32ole</p>
+	<p><a href='https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi'>Python 2.7.9</a></p>
+	<p span style="margin-left:20px;">Permet de compiler la librairie win32ole</p>
+	</br>
+	<p>Installez le module node <b>win32ole</b><span style="color: #0000ff"></p>
+	<p span style="margin-left:20px;">Lancer une console (Touche Windows + R puis cmd)</p>
+	<p span style="margin-left:20px;">Naviguez vers votre dossier contenant SARAH</p>
+	<p span style="margin-left:20px;">Ecrivez NodeJS\npm install win32ole</p>
+	<p span style="color: red;margin-left:40px;">Il se peut que l'installation renvoie des erreurs</p>
+	<p span style="color: red;margin-left:40px;">Verifiez que node-gyp est dons vos modules</p>
+	<p span style="color: red;margin-left:40px;">Si une erreur vous indique qu'un fichier "node.lib" ne peut pas etre lu:</p>
+	<p span style="color: red;margin-left:45px;">Déplacez node.lib de C:\Users\xxx\.node-gyp\0.10.12\ia32 vers C:\Users\xxx\.node-gyp\0.10.12\</p>
+    <p span style="color: red;margin-left:45px;">Une fois compilée, déplacez la librairie vers le dossier lib du module</p>
+   	</div>
+    <div class="span11">
+	<h1>Configuration</h1>
+	<p>Editer <b>ligth.xml</b> pour ajouter vos modules<span style="color: #0000ff"></p>
+	<p span style="margin-left:20px;">Dans la premiere balise <b>one-of</b> ajoutez vos commandes<span style="color: #0000ff"></p>
+	<p span style="margin-left:20px;">type: sendplc ou sendrf; valeur: on ou off (ou xdim --> a tester) </p>
+	<p span style="margin-left:20px;">Dans la deuxieme balise <b>one-of</b> faite correspondre les modules aux emplacements que vous énoncerez<span style="color: #0000ff"></p>
+    </div>
+  </div>
+</div>
